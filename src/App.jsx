@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Product from "./pages/Product/Product";
 import Catalog from "./pages/Catalog/Catalog";
 import Experiences from "./pages/Experiences/Experiences";
+import Reservation from "./pages/Reservation/Reservation";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Route path="/vinhos/:slug" element={<Product />} />
       <Route path="/vinhos" element={<Catalog />} />
       <Route path="/experiencias" element={<Experiences />} />
+      <Route path="/reservar" element={<Reservation />} />
     </Routes>
   );
 }

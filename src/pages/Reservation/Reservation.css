@@ -1,0 +1,174 @@
+.reservation {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+.reservation__intro {
+  padding: 80px 10%;
+  background: var(--wine);
+  color: var(--cream);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reservation__intro > a {
+  margin-bottom: 64px;
+  opacity: 0.8;
+}
+
+.reservation__intro > span,
+.reservation__confirmation > span {
+  margin-bottom: 16px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+}
+
+.reservation__intro h1,
+.reservation__confirmation h1 {
+  font-size: clamp(4rem, 7vw, 6rem);
+  line-height: 0.9;
+  margin-bottom: 28px;
+}
+
+.reservation__intro p {
+  max-width: 500px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.reservation__form {
+  padding: 80px 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+
+.reservation__field {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.reservation__field label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--wine);
+}
+
+.reservation__field select {
+  padding: 14px;
+  background: transparent;
+  border: 1px solid rgba(37, 35, 33, 0.2);
+}
+
+.reservation__dates {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.reservation__dates button {
+  padding: 12px 16px;
+  background: transparent;
+  border: 1px solid rgba(37, 35, 33, 0.2);
+  cursor: pointer;
+}
+
+.reservation__dates button.active {
+  background: var(--wine);
+  color: var(--cream);
+  border-color: var(--wine);
+}
+
+.reservation__people {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  border: 1px solid rgba(37, 35, 33, 0.2);
+}
+
+.reservation__people button {
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.reservation__summary {
+  padding: 24px 0;
+
+  border-top: 1px solid rgba(37, 35, 33, 0.15);
+  border-bottom: 1px solid rgba(37, 35, 33, 0.15);
+}
+
+.reservation__summary div {
+  padding: 8px 0;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.reservation__summary span {
+  opacity: 0.6;
+}
+
+.reservation__submit {
+  padding: 16px 24px;
+
+  background: var(--wine);
+  color: var(--cream);
+
+  border: none;
+  cursor: pointer;
+}
+
+.reservation__submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.reservation--confirmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.reservation__confirmation {
+  max-width: 700px;
+  padding: 80px 24px;
+}
+
+.reservation__confirmation p {
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .reservation {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation__intro,
+  .reservation__form {
+    padding: 64px 24px;
+  }
+}

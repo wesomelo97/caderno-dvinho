@@ -76,7 +76,12 @@ export default function Experiences() {
                   <strong>{experience.price}</strong>
                 </div>
 
-                <button>Ver datas</button>
+                <Link
+                    className="experience-page-card__button"
+                    to={`/reservar?experiencia=${experience.slug}`}
+                    >
+                    Ver datas
+                </Link>
               </div>
             </article>
           ))}
@@ -116,7 +121,12 @@ export default function Experiences() {
           gosto sem precisar saber nada antes.
         </p>
 
-        <button>Ver próximas datas</button>
+        <Link
+            className="experiences-page__cta-button"
+            to="/reservar?experiencia=degustacao"
+            >
+            Ver próximas datas
+        </Link>
       </section>
     </main>
   );

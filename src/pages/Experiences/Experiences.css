@@ -76,6 +76,18 @@
   justify-content: space-between;
 }
 
+.experience-page-card__button {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px;
+
+  background: var(--wine);
+  color: var(--cream);
+
+  text-align: center;
+}
+
 .experience-page-card__number {
   display: block;
   margin-bottom: 28px;
@@ -177,6 +189,7 @@
 }
 
 .experiences-page__cta button {
+  display: inline-block;
   padding: 14px 22px;
 
   background: var(--cream);
