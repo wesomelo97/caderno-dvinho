@@ -2,6 +2,7 @@ import Header from "../../components/Header/Header";
 import "./Home.css";
 import WineCard from "../../components/WineCard/WineCard";
 import { wines } from "../../data/wines";
+import WineFinder from "../../components/WineFinder/WineFinder";
 
 export default function Home() {
   return (
@@ -66,37 +67,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="wine-finder" className="finder">
-        <div className="finder__intro">
-            <span className="finder__eyebrow">Wine Finder</span>
-
-            <h2>Encontre um vinho que combine com você.</h2>
-
-            <p>
-            Não precisa decorar uva, região ou safra. Comece pelo que você gosta,
-            pela ocasião e pelo tipo de experiência que procura.
-            </p>
-        </div>
-
-        <div className="finder__panel">
-            <div className="finder__step">
-            <span>01</span>
-            <h3>Como você prefere?</h3>
-
-            <div className="finder__options">
-                <button>Leve</button>
-                <button>Encorpado</button>
-                <button>Frutado</button>
-                <button>Seco</button>
-            </div>
-            </div>
-
-            <div className="finder__footer">
-            <p>Leva menos de 1 minuto.</p>
-            <button className="finder__button">Começar descoberta</button>
-            </div>
-        </div>
-        </section>
+        <WineFinder />
 
       <section id="vinhos" className="selection">
             <div className="selection__header">
