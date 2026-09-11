@@ -101,7 +101,22 @@
 .wine-finder__result-actions {
   display: flex;
   gap: 12px;
+  align-items: center;
   flex-wrap: wrap;
+}
+
+.wine-finder__primary-action {
+  padding: 14px 20px;
+  background: var(--wine);
+  color: var(--cream);
+  border: 1px solid var(--wine);
+}
+
+.wine-finder__secondary-action {
+  padding: 14px 20px;
+  background: transparent;
+  color: var(--charcoal);
+  border: 1px solid rgba(37, 35, 33, 0.25);
 }
 
 /* MEDIA QUERY */

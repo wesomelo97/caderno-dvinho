@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./WineFinder.css";
 import { wines } from "../../data/wines";
+import { Link } from "react-router-dom";
 
 const questions = [
   {
@@ -124,8 +125,19 @@ export default function WineFinder() {
               </strong>
 
               <div className="wine-finder__result-actions">
-                <button>Ver vinho</button>
-                <button onClick={restartFinder}>Refazer descoberta</button>
+                <Link
+                  className="wine-finder__primary-action"
+                  to={`/vinhos/${result.slug}`}
+                >
+                  Ver vinho
+                </Link>
+
+                <button
+                  className="wine-finder__secondary-action"
+                  onClick={restartFinder}
+                >
+                  Refazer descoberta
+                </button>
               </div>
             </div>
           </div>

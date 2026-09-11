@@ -1,4 +1,5 @@
 import "./WineCard.css";
+import { Link } from "react-router-dom";
 
 export default function WineCard({ wine }) {
   return (
@@ -24,7 +25,7 @@ export default function WineCard({ wine }) {
             })}
           </strong>
 
-          <button>Ver vinho</button>
+          <Link to={`/vinhos/${wine.slug}`}>Ver vinho</Link>
         </div>
       </div>
     </article>
