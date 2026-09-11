@@ -101,7 +101,7 @@ export default function Home() {
                     Prove diferentes estilos de vinho e entenda, na prática, o que muda
                     entre uvas, regiões e perfis de sabor.
                 </p>
-                <a href="#">Conhecer experiência →</a>
+                <Link to="/experiencias">Conhecer experiência →</Link>
                 </article>
 
                 <article className="experience-card">
@@ -111,7 +111,7 @@ export default function Home() {
                     Uma experiência entre vinho e gastronomia para descobrir como sabores
                     podem se complementar.
                 </p>
-                <a href="#">Conhecer experiência →</a>
+                <Link to="/experiencias">Conhecer experiência →</Link>
                 </article>
 
                 <article className="experience-card">
@@ -121,7 +121,7 @@ export default function Home() {
                     Encontros temáticos com rótulos, regiões e estilos escolhidos pela
                     curadoria da Caderno D'Vinho.
                 </p>
-                <a href="#">Conhecer experiência →</a>
+                <Link to="/experiencias">Conhecer experiência →</Link>
                 </article>
             </div>
         </section>

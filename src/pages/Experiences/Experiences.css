@@ -1,0 +1,210 @@
+.experiences-page {
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+.experiences-page__hero {
+  padding: 80px 8% 100px;
+  background: var(--olive);
+  color: var(--cream);
+}
+
+.experiences-page__back {
+  display: inline-block;
+  margin-bottom: 64px;
+  opacity: 0.8;
+}
+
+.experiences-page__hero > span,
+.experiences-page__intro > span,
+.experiences-page__how > div > span,
+.experiences-page__cta > span {
+  display: block;
+  margin-bottom: 16px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+}
+
+.experiences-page__hero h1 {
+  max-width: 900px;
+
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.9;
+  margin-bottom: 28px;
+}
+
+.experiences-page__hero p {
+  max-width: 620px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.experiences-page__content {
+  padding: 100px 8%;
+}
+
+.experiences-page__intro {
+  max-width: 760px;
+  margin-bottom: 56px;
+}
+
+.experiences-page__intro > span {
+  color: var(--wine);
+}
+
+.experiences-page__intro h2 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.95;
+}
+
+.experiences-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.experience-page-card {
+  min-height: 500px;
+  padding: 32px;
+
+  border: 1px solid rgba(37, 35, 33, 0.16);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experience-page-card__number {
+  display: block;
+  margin-bottom: 28px;
+
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--wine);
+}
+
+.experience-page-card h3 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.experience-page-card p {
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+.experience-page-card__footer {
+  padding-top: 24px;
+  border-top: 1px solid rgba(37, 35, 33, 0.15);
+}
+
+.experience-page-card__footer > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.experience-page-card__footer span {
+  font-size: 0.8rem;
+  opacity: 0.55;
+}
+
+.experience-page-card__footer button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px;
+
+  border: none;
+  background: var(--wine);
+  color: var(--cream);
+  cursor: pointer;
+}
+
+.experiences-page__how {
+  padding: 100px 8%;
+  background: var(--charcoal);
+  color: var(--cream);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.experiences-page__how h2 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.95;
+}
+
+.experiences-page__steps {
+  border-top: 1px solid rgba(242, 232, 213, 0.25);
+}
+
+.experiences-page__steps div {
+  padding: 24px 0;
+
+  display: grid;
+  grid-template-columns: 60px 1fr;
+
+  border-bottom: 1px solid rgba(242, 232, 213, 0.25);
+}
+
+.experiences-page__steps strong {
+  font-family: var(--font-display);
+  color: var(--cream);
+}
+
+.experiences-page__cta {
+  padding: 100px 8%;
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.experiences-page__cta h2 {
+  max-width: 760px;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.95;
+  margin-bottom: 24px;
+}
+
+.experiences-page__cta p {
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  opacity: 0.8;
+}
+
+.experiences-page__cta button {
+  padding: 14px 22px;
+
+  background: var(--cream);
+  color: var(--wine);
+
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .experiences-page__hero {
+    padding: 56px 24px 72px;
+  }
+
+  .experiences-page__content {
+    padding: 72px 24px;
+  }
+
+  .experiences-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experiences-page__how {
+    grid-template-columns: 1fr;
+    padding: 72px 24px;
+  }
+
+  .experiences-page__cta {
+    padding: 72px 24px;
+  }
+}

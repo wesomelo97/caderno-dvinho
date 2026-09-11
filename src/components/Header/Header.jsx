@@ -9,7 +9,7 @@ export default function Header() {
       <nav className="header__nav">
         <Link to="/vinhos">Vinhos</Link>
         <a href="#wine-finder">Wine Finder</a>
-        <a href="#experiencias">Experiências</a>
+        <Link to="/experiencias">Experiências</Link>
         <a href="#aprender">Aprender</a>
       </nav>
 
