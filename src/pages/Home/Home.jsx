@@ -3,6 +3,7 @@ import "./Home.css";
 import WineCard from "../../components/WineCard/WineCard";
 import { wines } from "../../data/wines";
 import WineFinder from "../../components/WineFinder/WineFinder";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -76,7 +77,7 @@ export default function Home() {
                 <h2>Seleção da Casa</h2>
                 </div>
 
-                <a href="#">Ver todos os vinhos →</a>
+                <Link to="/vinhos">Ver todos os vinhos →</Link>
             </div>
 
             <div className="selection__grid">
