@@ -12,7 +12,7 @@ export default function Catalog() {
       ? wines
       : wines.filter((wine) => wine.type === typeFilter);
 
-  const types = ["Todos", "Tinto", "Branco", "Rosé"];
+    const types = ["Todos", "Tinto", "Branco", "Rosé", "Espumante"];
 
   return (
     <main className="catalog">

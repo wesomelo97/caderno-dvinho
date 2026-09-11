@@ -81,8 +81,8 @@ export default function Home() {
             </div>
 
             <div className="selection__grid">
-                {wines.map((wine) => (
-                <WineCard key={wine.id} wine={wine} />
+                {wines.slice(0, 3).map((wine) => (
+                    <WineCard key={wine.id} wine={wine} />
                 ))}
             </div>
       </section>
