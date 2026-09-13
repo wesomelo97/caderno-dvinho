@@ -146,19 +146,19 @@ export default function Home() {
                 <article className="learn-card">
                 <span>Uvas</span>
                 <h3>Cabernet, Merlot, Malbec... o que realmente muda?</h3>
-                <a href="#">Explorar →</a>
+                <Link to="/aprender">Explorar →</Link>
                 </article>
 
                 <article className="learn-card">
                 <span>Harmonização</span>
                 <h3>Como combinar vinho e comida sem decorar regra</h3>
-                <a href="#">Explorar →</a>
+                <Link to="/aprender">Explorar →</Link>
                 </article>
 
                 <article className="learn-card">
                 <span>Degustação</span>
                 <h3>O que observar numa taça além de “gostei” ou “não gostei”</h3>
-                <a href="#">Explorar →</a>
+                <Link to="/aprender">Explorar →</Link>
                 </article>
             </div>
         </section>

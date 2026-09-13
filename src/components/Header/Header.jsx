@@ -10,7 +10,7 @@ export default function Header() {
         <Link to="/vinhos">Vinhos</Link>
         <a href="#wine-finder">Wine Finder</a>
         <Link to="/experiencias">Experiências</Link>
-        <a href="#aprender">Aprender</a>
+        <Link to="/aprender">Aprender</Link>
         <Link to="/sobre">Sobre</Link>
       </nav>
 
