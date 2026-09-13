@@ -11,6 +11,7 @@ export default function Header() {
         <a href="#wine-finder">Wine Finder</a>
         <Link to="/experiencias">Experiências</Link>
         <a href="#aprender">Aprender</a>
+        <Link to="/sobre">Sobre</Link>
       </nav>
 
       <button className="header__button">Explorar vinhos</button>

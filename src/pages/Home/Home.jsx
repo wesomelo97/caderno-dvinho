@@ -175,7 +175,7 @@ export default function Home() {
                 descoberta. Cada vinho é uma nova página.
                 </p>
 
-                <a href="#">Conheça a Caderno D'Vinho →</a>
+                <Link to="/sobre">Conheça a Caderno D'Vinho →</Link>
             </div>
         </section>
     </main>
@@ -203,7 +203,7 @@ export default function Home() {
 
             <div>
             <strong>Marca</strong>
-            <a href="#">Sobre</a>
+            <Link to="/sobre">Sobre</Link>
             <a href="#">Contato</a>
             <a href="#">Instagram</a>
             </div>

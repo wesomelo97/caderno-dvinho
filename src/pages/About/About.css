@@ -1,0 +1,186 @@
+.about {
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+.about__hero {
+  padding: 80px 8% 110px;
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.about__back {
+  display: inline-block;
+  margin-bottom: 64px;
+  opacity: 0.8;
+}
+
+.about__hero > span,
+.about__problem span,
+.about__philosophy > span,
+.about__ecosystem > div > span,
+.about__cta > span {
+  display: block;
+  margin-bottom: 16px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+}
+
+.about__hero h1 {
+  max-width: 1000px;
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.9;
+  margin-bottom: 28px;
+}
+
+.about__hero p {
+  max-width: 620px;
+  line-height: 1.7;
+  opacity: 0.82;
+}
+
+.about__problem,
+.about__ecosystem {
+  padding: 100px 8%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.about__problem h2,
+.about__ecosystem h2 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.95;
+}
+
+.about__problem > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about__philosophy {
+  padding: 100px 8%;
+  background: var(--olive);
+  color: var(--cream);
+}
+
+.about__philosophy > h2 {
+  max-width: 800px;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.95;
+  margin-bottom: 64px;
+}
+
+.about__principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about__principles article {
+  padding-top: 28px;
+  border-top: 1px solid rgba(242, 232, 213, 0.3);
+}
+
+.about__principles strong {
+  display: block;
+  margin-bottom: 32px;
+  font-family: var(--font-display);
+}
+
+.about__principles h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.about__principles p {
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.about__ecosystem-list {
+  border-top: 1px solid rgba(37, 35, 33, 0.2);
+}
+
+.about__ecosystem-list div {
+  padding: 22px 0;
+
+  display: grid;
+  grid-template-columns: 160px 1fr;
+
+  border-bottom: 1px solid rgba(37, 35, 33, 0.2);
+}
+
+.about__ecosystem-list strong {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--wine);
+}
+
+.about__ecosystem-list p {
+  opacity: 0.7;
+}
+
+.about__cta {
+  padding: 100px 8%;
+  background: var(--charcoal);
+  color: var(--cream);
+}
+
+.about__cta h2 {
+  max-width: 820px;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.95;
+  margin-bottom: 32px;
+}
+
+.about__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about__actions a {
+  padding: 14px 20px;
+  border: 1px solid var(--cream);
+}
+
+.about__actions a:first-child {
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+@media (max-width: 768px) {
+  .about__hero,
+  .about__problem,
+  .about__philosophy,
+  .about__ecosystem,
+  .about__cta {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about__problem,
+  .about__ecosystem {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about__principles {
+    grid-template-columns: 1fr;
+  }
+
+  .about__ecosystem-list div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

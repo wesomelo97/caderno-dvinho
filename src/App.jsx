@@ -6,6 +6,7 @@ import Product from "./pages/Product/Product";
 import Catalog from "./pages/Catalog/Catalog";
 import Experiences from "./pages/Experiences/Experiences";
 import Reservation from "./pages/Reservation/Reservation";
+import About from "./pages/About/About";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route path="/vinhos" element={<Catalog />} />
       <Route path="/experiencias" element={<Experiences />} />
       <Route path="/reservar" element={<Reservation />} />
+      <Route path="/sobre" element={<About />} />
     </Routes>
   );
 }
