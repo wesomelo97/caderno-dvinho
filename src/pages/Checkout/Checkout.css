@@ -1,0 +1,143 @@
+.checkout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+.checkout__intro {
+  padding: 80px 10%;
+  background: var(--wine);
+  color: var(--cream);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkout__intro > a {
+  margin-bottom: 64px;
+  opacity: 0.8;
+}
+
+.checkout__intro > span {
+  margin-bottom: 16px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+}
+
+.checkout__intro h1 {
+  font-size: clamp(4rem, 7vw, 6rem);
+  line-height: 0.9;
+  margin-bottom: 24px;
+}
+
+.checkout__intro p {
+  max-width: 500px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.checkout__form {
+  padding: 80px 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.checkout__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkout__group label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--wine);
+}
+
+.checkout__group input {
+  padding: 14px;
+
+  background: transparent;
+  border: 1px solid rgba(37, 35, 33, 0.2);
+}
+
+.checkout__summary {
+  padding: 24px 0;
+
+  border-top: 1px solid rgba(37, 35, 33, 0.15);
+  border-bottom: 1px solid rgba(37, 35, 33, 0.15);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout__summary strong {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--wine);
+}
+
+.checkout__form > button {
+  padding: 16px;
+
+  border: none;
+  background: var(--wine);
+  color: var(--cream);
+
+  cursor: pointer;
+}
+
+.checkout--success,
+.checkout--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.checkout__success,
+.checkout--empty > div {
+  max-width: 700px;
+  padding: 80px 24px;
+}
+
+.checkout__success > span {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+}
+
+.checkout__success h1,
+.checkout--empty h1 {
+  margin: 18px 0 24px;
+
+  font-size: clamp(4rem, 7vw, 6rem);
+  line-height: 0.9;
+}
+
+.checkout__success p {
+  margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .checkout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout__intro,
+  .checkout__form {
+    padding: 64px 24px;
+  }
+}
