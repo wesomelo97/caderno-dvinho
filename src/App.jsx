@@ -9,6 +9,7 @@ import Reservation from "./pages/Reservation/Reservation";
 import About from "./pages/About/About";
 import Learn from "./pages/Learn/Learn";
 import Article from "./pages/Article/Article";
+import Cart from "./pages/Cart/Cart";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Route path="/sobre" element={<About />} />
       <Route path="/aprender" element={<Learn />} />
       <Route path="/aprender/:slug" element={<Article />} />
+      <Route path="/carrinho" element={<Cart />} />
     </Routes>
   );
 }

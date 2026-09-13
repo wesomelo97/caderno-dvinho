@@ -1,8 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import { wines } from "../../data/wines";
 import "./Product.css";
+import { useCart } from "../../context/CartContext.jsx";
 
 export default function Product() {
+  const { addToCart } = useCart();
   const { slug } = useParams();
 
   const wine = wines.find((item) => item.slug === slug);
@@ -48,7 +50,12 @@ export default function Product() {
           })}
         </strong>
 
-        <button className="product__button">Adicionar ao carrinho</button>
+        <button
+            className="product__button"
+            onClick={() => addToCart(wine)}
+          >
+            Adicionar ao carrinho
+        </button>
       </div>
     </main>
   );
