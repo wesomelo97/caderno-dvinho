@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Learn.css";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const articles = [
   {
@@ -33,7 +35,9 @@ const articles = [
 
 export default function Learn() {
   return (
-    <main className="learn-page">
+    <>
+      <Header variant="solid" />
+      <main className="learn-page">
       <section className="learn-page__hero">
         <Link to="/" className="learn-page__back">
           ← Voltar para a home
@@ -80,6 +84,8 @@ export default function Learn() {
           ))}
         </div>
       </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

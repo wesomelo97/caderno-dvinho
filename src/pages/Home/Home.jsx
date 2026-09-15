@@ -4,13 +4,15 @@ import WineCard from "../../components/WineCard/WineCard";
 import { wines } from "../../data/wines";
 import WineFinder from "../../components/WineFinder/WineFinder";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   return (
     <>
+    
     <main>
       <section className="hero">
-        <Header />
+        <Header variant="overlay" />
 
         <div className="hero__overlay"></div>
 
@@ -180,40 +182,7 @@ export default function Home() {
         </section>
     </main>
 
-    <footer className="footer">
-        <div className="footer__brand">
-            <h2>Caderno D'Vinho</h2>
-            <p>Descubra seu gosto. Construa seu repertório.</p>
-        </div>
-
-        <div className="footer__links">
-            <div>
-            <strong>Explorar</strong>
-            <a href="#vinhos">Vinhos</a>
-            <a href="#wine-finder">Wine Finder</a>
-            <a href="#experiencias">Experiências</a>
-            </div>
-
-            <div>
-            <strong>Aprender</strong>
-            <a href="#aprender">Guias</a>
-            <a href="#aprender">Uvas</a>
-            <a href="#aprender">Harmonização</a>
-            </div>
-
-            <div>
-            <strong>Marca</strong>
-            <Link to="/sobre">Sobre</Link>
-            <a href="#">Contato</a>
-            <a href="#">Instagram</a>
-            </div>
-        </div>
-
-        <div className="footer__bottom">
-            <span>© 2026 Caderno D'Vinho</span>
-            <span>Vinho, descoberta e repertório.</span>
-        </div>
-    </footer>
+    <Footer />
     </>
   );
 }

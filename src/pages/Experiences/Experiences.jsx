@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Experiences.css";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const experiences = [
   {
@@ -30,7 +32,9 @@ const experiences = [
 
 export default function Experiences() {
   return (
-    <main className="experiences-page">
+    <>
+      <Header variant="solid" />
+     <main className="experiences-page">
       <section className="experiences-page__hero">
         <Link to="/" className="experiences-page__back">
           ← Voltar para a home
@@ -128,6 +132,8 @@ export default function Experiences() {
             Ver próximas datas
         </Link>
       </section>
-    </main>
+     </main>
+     <Footer />
+    </>
   );
 }

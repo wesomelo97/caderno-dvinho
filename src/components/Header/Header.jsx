@@ -1,24 +1,32 @@
-import "./Header.css";
 import { Link } from "react-router-dom";
-import { useCart } from "../../context/CartContext";
+import { ShoppingCart } from "lucide-react";
+import { useCart } from "../../context/CartContext.jsx";
+import "./Header.css";
 
-export default function Header() {
+export default function Header({ variant = "solid" }) {
   const { cartCount } = useCart();
+
   return (
-    <header className="header">
-      <div className="header__brand">Caderno D'Vinho</div>
+    <header className={`header header--${variant}`}>
+      <Link to="/" className="header__brand">
+        Caderno D'Vinho
+      </Link>
 
       <nav className="header__nav">
         <Link to="/vinhos">Vinhos</Link>
-        <a href="#wine-finder">Wine Finder</a>
         <Link to="/experiencias">Experiências</Link>
         <Link to="/aprender">Aprender</Link>
         <Link to="/sobre">Sobre</Link>
       </nav>
+
       <Link to="/carrinho" className="header__cart">
-         Carrinho ({cartCount})
+        <ShoppingCart size={18} strokeWidth={1.7} />
+        <span>Carrinho</span>
+
+        {cartCount > 0 && (
+          <strong>{cartCount}</strong>
+        )}
       </Link>
-      <button className="header__button">Explorar vinhos</button>
     </header>
   );
 }

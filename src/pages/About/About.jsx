@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import "./About.css";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 export default function About() {
   return (
-    <main className="about">
+    <>
+      <Header variant="solid" />
+      <main className="about">
       <section className="about__hero">
         <Link to="/" className="about__back">
           ← Voltar para a home
@@ -108,6 +112,8 @@ export default function About() {
           <Link to="/#wine-finder">Descobrir meu perfil</Link>
         </div>
       </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

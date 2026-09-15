@@ -159,18 +159,6 @@
   opacity: 0.9;
 }
 
-.catalog__cart-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-
-  padding: 10px 14px;
-
-  border: 1px solid rgba(242, 232, 213, 0.35);
-  color: var(--cream);
-
-  font-size: 0.9rem;
-}
 
 .catalog__cart-button strong {
   min-width: 22px;

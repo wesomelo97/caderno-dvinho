@@ -5,6 +5,8 @@ import WineCard from "../../components/WineCard/WineCard";
 import "./Catalog.css";
 import { useCart } from "../../context/CartContext.jsx";
 import { ShoppingCart } from "lucide-react";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 export default function Catalog() {
   const { cartCount } = useCart();
@@ -54,18 +56,15 @@ export default function Catalog() {
   }
 
   return (
-    <main className="catalog">
+    <>
+      <Header variant="solid" />
+      <main className="catalog">
       <section className="catalog__hero">
         <div className="catalog__topbar">
           <Link to="/" className="catalog__back">
             ← Voltar para a home
           </Link>
 
-          <Link to="/carrinho" className="catalog__cart-button">
-            <ShoppingCart size={18} strokeWidth={1.7} />
-            <span>Carrinho</span>
-            <strong>{cartCount}</strong>
-          </Link>
         </div>
 
         <span>Nosso caderno de rótulos</span>
@@ -154,6 +153,8 @@ export default function Catalog() {
           </div>
         )}
       </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

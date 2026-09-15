@@ -4,6 +4,7 @@ import { wines } from "../../data/wines";
 import { useCart } from "../../context/CartContext.jsx";
 import "./Product.css";
 import { ShoppingCart } from "lucide-react";
+import Header from "../../components/Header/Header";
 
 export default function Product() {
   const { addToCart, cartCount } = useCart();
@@ -22,6 +23,8 @@ export default function Product() {
   }
 
   return (
+    <>
+    <Header variant="solid" />
     <main className="product">
       <div className="product__image">
                 <img src={wine.image} alt={wine.name} />
@@ -33,11 +36,7 @@ export default function Product() {
             ← Voltar aos vinhos
           </Link>
 
-          <Link to="/carrinho" className="product__cart-button">
-            <ShoppingCart size={18} strokeWidth={1.7} />
-            <span>Carrinho</span>
-            <strong>{cartCount}</strong>
-          </Link>
+          
         </div>
 
         <span className="product__type">{wine.type}</span>
@@ -97,5 +96,6 @@ export default function Product() {
       
       </div>
     </main>
+    </>
   );
 }

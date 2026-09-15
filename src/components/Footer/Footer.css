@@ -1,0 +1,79 @@
+.footer {
+  padding: 72px 8% 30px;
+
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.footer__brand {
+  margin-bottom: 56px;
+}
+
+.footer__brand h2 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+}
+
+.footer__brand p {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+
+  padding: 44px 0;
+
+  border-top: 1px solid rgba(242, 232, 213, 0.22);
+  border-bottom: 1px solid rgba(242, 232, 213, 0.22);
+}
+
+.footer__links div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__links strong {
+  margin-bottom: 8px;
+
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.footer__links a {
+  opacity: 0.72;
+  transition: opacity 0.2s ease;
+}
+
+.footer__links a:hover {
+  opacity: 1;
+}
+
+.footer__bottom {
+  padding-top: 26px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .footer__links {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+}
