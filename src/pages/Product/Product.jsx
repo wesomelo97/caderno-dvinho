@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { wines } from "../../data/wines";
-import "./Product.css";
 import { useCart } from "../../context/CartContext.jsx";
+import "./Product.css";
+import { ShoppingCart } from "lucide-react";
 
 export default function Product() {
-  const { addToCart } = useCart();
+  const { addToCart, cartCount } = useCart();
+  const [quantity, setQuantity] = useState(1);
   const { slug } = useParams();
 
   const wine = wines.find((item) => item.slug === slug);
@@ -21,13 +24,21 @@ export default function Product() {
   return (
     <main className="product">
       <div className="product__image">
-        <img src={wine.image} alt={wine.name} />
-      </div>
+                <img src={wine.image} alt={wine.name} />
+              </div>
 
-      <div className="product__content">
-        <Link to="/" className="product__back">
-          ← Voltar
-        </Link>
+              <div className="product__content">
+                <div className="product__topbar">
+          <Link to="/vinhos" className="product__back">
+            ← Voltar aos vinhos
+          </Link>
+
+          <Link to="/carrinho" className="product__cart-button">
+            <ShoppingCart size={18} strokeWidth={1.7} />
+            <span>Carrinho</span>
+            <strong>{cartCount}</strong>
+          </Link>
+        </div>
 
         <span className="product__type">{wine.type}</span>
 
@@ -50,12 +61,40 @@ export default function Product() {
           })}
         </strong>
 
-        <button
+        <div className="product__purchase">
+          <div className="product__quantity">
+            <button
+              type="button"
+              onClick={() => setQuantity(Math.max(1, quantity - 1))}
+            >
+              −
+            </button>
+
+            <strong>{quantity}</strong>
+
+            <button
+              type="button"
+              onClick={() => setQuantity(quantity + 1)}
+            >
+              +
+            </button>
+          </div>
+
+          <button
             className="product__button"
-            onClick={() => addToCart(wine)}
+            onClick={() => {
+              for (let i = 0; i < quantity; i++) {
+                addToCart(wine);
+              }
+
+              setQuantity(1);
+            }}
           >
             Adicionar ao carrinho
-        </button>
+          </button>
+        </div>
+
+      
       </div>
     </main>
   );

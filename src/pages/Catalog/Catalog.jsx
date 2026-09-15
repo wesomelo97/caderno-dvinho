@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { wines } from "../../data/wines";
 import WineCard from "../../components/WineCard/WineCard";
 import "./Catalog.css";
+import { useCart } from "../../context/CartContext.jsx";
+import { ShoppingCart } from "lucide-react";
 
 export default function Catalog() {
+  const { cartCount } = useCart();
   const [typeFilter, setTypeFilter] = useState("Todos");
   const [profileFilter, setProfileFilter] = useState("Todos");
   const [occasionFilter, setOccasionFilter] = useState("Todos");
@@ -53,9 +56,17 @@ export default function Catalog() {
   return (
     <main className="catalog">
       <section className="catalog__hero">
-        <Link to="/" className="catalog__back">
-          ← Voltar para a home
-        </Link>
+        <div className="catalog__topbar">
+          <Link to="/" className="catalog__back">
+            ← Voltar para a home
+          </Link>
+
+          <Link to="/carrinho" className="catalog__cart-button">
+            <ShoppingCart size={18} strokeWidth={1.7} />
+            <span>Carrinho</span>
+            <strong>{cartCount}</strong>
+          </Link>
+        </div>
 
         <span>Nosso caderno de rótulos</span>
 
