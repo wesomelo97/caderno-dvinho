@@ -8,7 +8,7 @@ export const wines = [
     profile: ["Intenso", "Seco"],
     occasions: ["Jantar", "Presente"],
     price: 89.9,
-    image: "/images/wine-01.png",
+    image: `${import.meta.env.BASE_URL}images/wine-01.png`,
     description:
       "Um tinto encorpado e estruturado, com presença na taça e perfil mais intenso.",
   },
@@ -21,7 +21,7 @@ export const wines = [
     profile: ["Leve", "Frutado"],
     occasions: ["Relaxar", "Experimentar algo novo"],
     price: 64.9,
-    image: "/images/wine-02.png",
+    image: `${import.meta.env.BASE_URL}images/wine-02.png`,
     description:
       "Leve, fresco e frutado, ideal para quem busca algo fácil de apreciar e descontraído.",
   },
@@ -34,7 +34,7 @@ export const wines = [
     profile: ["Leve", "Fresco"],
     occasions: ["Relaxar", "Jantar"],
     price: 72.9,
-    image: "/images/wine-03.png",
+    image: `${import.meta.env.BASE_URL}images/wine-03.png`,
     description:
       "Um branco fresco e cítrico, pensado para momentos leves e experiências mais refrescantes.",
   },
@@ -47,7 +47,7 @@ export const wines = [
     profile: ["Intenso", "Frutado"],
     occasions: ["Jantar", "Experimentar algo novo"],
     price: 94.9,
-    image: "/images/wine-04.png",
+    image: `${import.meta.env.BASE_URL}images/wine-04.png`,
     description:
       "Malbec de perfil intenso e frutado, com bastante presença e um lado mais macio na boca.",
   },
@@ -60,7 +60,7 @@ export const wines = [
     profile: ["Intenso", "Seco"],
     occasions: ["Jantar", "Presente"],
     price: 109.9,
-    image: "/images/wine-05.png",
+    image: `${import.meta.env.BASE_URL}images/wine-05.png`,
     description:
       "Cabernet estruturado e seco, pensado para quem gosta de vinhos firmes e marcantes.",
   },
@@ -73,7 +73,7 @@ export const wines = [
     profile: ["Equilibrado", "Frutado"],
     occasions: ["Jantar", "Relaxar"],
     price: 79.9,
-    image: "/images/wine-06.png",
+    image: `${import.meta.env.BASE_URL}images/wine-06.png`,
     description:
       "Merlot equilibrado e macio, com perfil frutado e fácil de acompanhar diferentes momentos.",
   },
@@ -86,7 +86,7 @@ export const wines = [
     profile: ["Leve", "Fresco"],
     occasions: ["Relaxar", "Experimentar algo novo"],
     price: 84.9,
-    image: "/images/wine-07.png",
+    image: `${import.meta.env.BASE_URL}images/wine-07.png`,
     description:
       "Branco leve e refrescante, com perfil vivo e ideal para quem gosta de sabores mais frescos.",
   },
@@ -99,7 +99,7 @@ export const wines = [
     profile: ["Equilibrado", "Seco"],
     occasions: ["Jantar", "Presente"],
     price: 92.9,
-    image: "/images/wine-08.png",
+    image: `${import.meta.env.BASE_URL}images/wine-08.png`,
     description:
       "Chardonnay equilibrado e seco, com textura mais envolvente e perfil gastronômico.",
   },
@@ -112,7 +112,7 @@ export const wines = [
     profile: ["Leve", "Frutado"],
     occasions: ["Relaxar", "Presente"],
     price: 69.9,
-    image: "/images/wine-09.png",
+    image: `${import.meta.env.BASE_URL}images/wine-09.png`,
     description:
       "Rosé leve e frutado, pensado para momentos descontraídos e ocasiões mais leves.",
   },
@@ -125,7 +125,7 @@ export const wines = [
     profile: ["Fresco", "Frutado"],
     occasions: ["Relaxar", "Experimentar algo novo"],
     price: 74.9,
-    image: "/images/wine-10.png",
+    image: `${import.meta.env.BASE_URL}images/wine-10.png`,
     description:
       "Rosé fresco e aromático, com perfil frutado e bastante versátil para diferentes ocasiões.",
   },
@@ -138,7 +138,7 @@ export const wines = [
     profile: ["Fresco", "Seco"],
     occasions: ["Presente", "Experimentar algo novo"],
     price: 99.9,
-    image: "/images/wine-11.png",
+    image: `${import.meta.env.BASE_URL}images/wine-11.png`,
     description:
       "Espumante brut fresco e seco, com perfil elegante e ótimo para celebrações ou descobertas.",
   },
@@ -151,7 +151,7 @@ export const wines = [
     profile: ["Fresco", "Frutado"],
     occasions: ["Presente", "Relaxar"],
     price: 119.9,
-    image: "/images/wine-12.png",
+    image: `${import.meta.env.BASE_URL}images/wine-12.png`,
     description:
       "Brut Rosé fresco e frutado, com perfil delicado e boa presença para ocasiões especiais.",
   },

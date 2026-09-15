@@ -4,7 +4,7 @@ export const articles = [
     slug: "como-comecar-a-entender-vinho",
     category: "Guia essencial",
     title: "Como começar a entender vinho de verdade",
-    image: "/images/articles/article-01.png",
+    image: `${import.meta.env.BASE_URL}images/articles/article-01.png`,
     intro:
       "Entender vinho não começa decorando nomes difíceis. Começa prestando atenção no que você sente na taça.",
     sections: [
@@ -31,7 +31,7 @@ export const articles = [
     slug: "diferencas-entre-uvas",
     category: "Uvas",
     title: "Cabernet, Merlot, Malbec... o que realmente muda?",
-    image: "/images/articles/article-02.png",
+    image: `${import.meta.env.BASE_URL}images/articles/article-02.png`,
     intro:
       "A uva influencia o estilo do vinho, mas não determina tudo. Ainda assim, entender algumas diferenças ajuda a escolher melhor.",
     sections: [
@@ -63,7 +63,7 @@ export const articles = [
     slug: "harmonizacao-sem-regra",
     category: "Harmonização",
     title: "Como combinar vinho e comida sem decorar regra",
-    image: "/images/articles/article-03.png",
+    image: `${import.meta.env.BASE_URL}images/articles/article-03.png`,
     intro:
       "Harmonizar não precisa parecer prova de sommelier. A ideia é simples: fazer vinho e comida funcionarem melhor juntos.",
     sections: [
