@@ -11,7 +11,7 @@ const articles = [
     description:
       "Um caminho simples para reconhecer estilos, sabores e diferenças sem transformar cada taça numa aula chata.",
     slug: "como-comecar-a-entender-vinho",
-    image: "/images/articles/article-01.png",
+    image: `${import.meta.env.BASE_URL}images/articles/article-01.png`,
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const articles = [
     description:
       "Entenda como cada uva influencia aroma, corpo, intensidade e estilo do vinho.",
     slug: "diferencas-entre-uvas",
-    image: "/images/articles/article-02.png",
+    image: `${import.meta.env.BASE_URL}images/articles/article-02.png`,
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const articles = [
     description:
       "Um jeito prático de pensar em harmonização usando intensidade, textura e equilíbrio.",
     slug: "harmonizacao-sem-regra",
-    image: "/images/articles/article-03.png",
+    image: `${import.meta.env.BASE_URL}images/articles/article-03.png`,
   },
 ];
 
